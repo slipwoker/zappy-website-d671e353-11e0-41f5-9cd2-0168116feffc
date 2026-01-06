@@ -1,0 +1,1351 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="גלו את 10 הטעויות הנפוצות ביותר שחוסכים עושים בניהול כספי ולמדו כיצד להימנע מהן. מדריך מקיף לחיסכון והשקעה נכונה מאת המרכז הישראלי לחיסכון.">
+    <title>10 טעויות שחוסכים עושים ואיך להימנע מהן</title>
+    <style>
+        :root {
+            --primary-blue: #2196F3;
+            --dark-text: #212121;
+            --orange-accent: #FF9800;
+            --red-accent: #D83B01;
+            --light-blue: #3AB1EA;
+            --light-gray: #EEEEEE;
+            --white: #FFFFFF;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--white);
+            direction: rtl;
+        }
+
+        .main-content {
+            overflow-x: hidden;
+        }
+
+        .section-container {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            color: var(--white);
+            padding: 120px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Mistakes Grid */
+        .mistakes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .mistake-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-blue);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .mistake-card:nth-child(1) { animation-delay: 0.1s; }
+        .mistake-card:nth-child(2) { animation-delay: 0.2s; }
+        .mistake-card:nth-child(3) { animation-delay: 0.3s; }
+        .mistake-card:nth-child(4) { animation-delay: 0.4s; }
+        .mistake-card:nth-child(5) { animation-delay: 0.5s; }
+        .mistake-card:nth-child(6) { animation-delay: 0.6s; }
+        .mistake-card:nth-child(7) { animation-delay: 0.7s; }
+        .mistake-card:nth-child(8) { animation-delay: 0.8s; }
+        .mistake-card:nth-child(9) { animation-delay: 0.9s; }
+        .mistake-card:nth-child(10) { animation-delay: 1s; }
+
+        .mistake-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-top-color: var(--orange-accent);
+        }
+
+        .mistake-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mistake-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .mistake-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+
+        .mistake-card h3 {
+            font-size: 1.4rem;
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .mistake-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, var(--light-gray) 100%);
+            padding: 80px 20px;
+            margin: 60px 0;
+            border-radius: 20px;
+        }
+
+        .solution-section h2 {
+            font-size: 2.5rem;
+            color: var(--dark-text);
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 800;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .solution-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange-accent), var(--primary-blue));
+            border-radius: 2px;
+        }
+
+        .solution-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .solution-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .solution-list li {
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-right: 4px solid var(--primary-blue);
+            transition: all 0.3s ease;
+            position: relative;
+            padding-right: 60px;
+        }
+
+        .solution-list li:hover {
+            background: #e3f2fd;
+            transform: translateX(-5px);
+            border-right-color: var(--orange-accent);
+        }
+
+        .solution-list li::before {
+            content: '✓';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Expert Section */
+        .expert-section {
+            background: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .expert-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--light-gray);
+        }
+
+        .expert-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 5px solid var(--primary-blue);
+            box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
+            object-fit: cover;
+        }
+
+        .expert-card h3 {
+            font-size: 1.8rem;
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .expert-card p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--orange-accent) 0%, var(--red-accent) 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            margin: 60px 0;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: var(--white);
+            color: var(--orange-accent);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            background: #fff;
+        }
+
+        /* Related Articles */
+        .related-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .related-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--dark-text);
+            font-weight: 800;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .related-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .related-card-content {
+            padding: 25px;
+        }
+
+        .related-card h3 {
+            font-size: 1.3rem;
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .related-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--orange-accent);
+            transform: translateX(-5px);
+        }
+
+        .read-more::after {
+            content: '←';
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .read-more:hover::after {
+            transform: translateX(-5px);
+        }
+
+        /* Companies Section */
+        .companies-section {
+            padding: 60px 20px;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .companies-section h2 {
+            font-size: 2rem;
+            color: var(--dark-text);
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .companies-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .company-logo {
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            filter: grayscale(100%);
+        }
+
+        .company-logo:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-container {
+                padding: 50px 15px;
+            }
+
+            .mistakes-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .solution-content {
+                padding: 30px 20px;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 80px 15px 60px;
+            }
+
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .mistake-card {
+                padding: 25px;
+            }
+
+            .cta-button {
+                padding: 15px 35px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+<style id="header-styles">
+/* Header styles extracted from homepage */
+@media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            nav {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow);
+                transition: right 0.3s ease;
+                overflow-y: auto;
+            }
+
+            nav.active {
+                right: 0;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+
+        .logo:hover {
+            color: var(--primary-dark);
+        }
+
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+
+        nav a {
+            color: var(--dark-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+
+        nav a:hover,
+        nav a.active {
+            color: var(--primary);
+        }
+
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark-text);
+        }
+
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+</style>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'd671e353-11e0-41f5-9cd2-0168116feffc',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div><header role="banner">
+        <div class="header-container">
+            <a href="/" class="logo" aria-label="חזרה לדף הבית">המרכז הישראלי לחיסכון</a>
+            <button class="mobile-menu-toggle" aria-label="תפריט ניווט" aria-expanded="false">
+                ☰
+            </button>
+            <nav role="navigation" aria-label="ניווט ראשי">
+                <a href="/category/תוכניות-חיסכון/">תוכניות חיסכון</a>
+                <a href="/category/חיסכון-פנסיוני/קרן-פנסיה/">קרן פנסיה</a>
+                <a href="/category/סדר-בביטוחים/">סדר בביטוחים</a>
+                <a href="/מי-אנחנו/">מי אנחנו?</a>
+                <a href="/צור-קשר/">צור קשר</a>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>10 טעויות בחיסכון ואיך להימנע מהן: המדריך המלא</h1>
+                <p class="subtitle">גלו את הטעויות הנפוצות ביותר שמונעות מכם להגיע ליעדים הפיננסיים שלכם ולמדו כיצד להימנע מהן</p>
+            </div>
+        </section>
+
+        <!-- Mistakes Grid Section -->
+        <section class="section-container">
+            <div class="content-wrapper">
+                <div class="mistakes-grid">
+                    <article class="mistake-card">
+                        <div class="mistake-number">1</div>
+                        <h3>המתנה לתקופה המושלמת להשקעה</h3>
+                        <p>אחת הטעויות הנפוצות ביותר היא להמתין ל"זמן המושלם" להתחיל להשקיע. האמת היא שאין זמן מושלם - הזמן הטוב ביותר להתחיל הוא עכשיו. ככל שתתחילו מוקדם יותר, כך תוכלו ליהנות מהריבית דריבית לאורך זמן.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">2</div>
+                        <h3>הימנעות מהשקעה במניות</h3>
+                        <p>פחד מהשקעה במניות עלול לעלות לכם ביוקר בטווח הארוך. למרות התנודתיות, מניות מציעות פוטנציאל תשואה גבוה יותר לאורך זמן. חשוב לפזר את ההשקעות ולהתאים את רמת הסיכון ליעדים האישיים.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">3</div>
+                        <h3>הסתמכות על חיסכון בלבד</h3>
+                        <p>חיסכון בחשבון בנק הוא חשוב, אך אינו מספיק. האינפלציה שוחקת את ערך הכסף לאורך זמן. חשוב לשלב בין חיסכון להשקעות כדי לשמור על ערך הכסף ולהגדיל אותו.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">4</div>
+                        <h3>חסכון על חשבון איכות החיים</h3>
+                        <p>חיסכון חשוב, אך לא על חשבון איכות החיים הבסיסית. חשוב למצוא איזון בין חיסכון להווה לבין הנאה מהחיים היום. תכנית חיסכון נכונה צריכה להיות בת קיימא ולא לגרום למתח מיותר.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">5</div>
+                        <h3>חוסר פיזור בהשקעות</h3>
+                        <p>השקעה של כל הכסף במקום אחד היא מסוכנת. פיזור נכון של ההשקעות בין מכשירים שונים, שווקים שונים ומגזרים שונים מפחית את הסיכון ומגדיל את הסיכוי להצלחה.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">6</div>
+                        <h3>הזנחת חיסכון לפנסיה</h3>
+                        <p>רבים מתעלמים מחיסכון לפנסיה בשנות העבודה המוקדמות. זוהי טעות יקרה - ככל שמתחילים מוקדם יותר, כך נדרש סכום חודשי נמוך יותר כדי להגיע לאותו יעד פנסיוני.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">7</div>
+                        <h3>חוסר הידע הפיננסי</h3>
+                        <p>אי הבנה של מושגים פיננסיים בסיסיים עלולה להוביל להחלטות שגויות. חשוב להשקיע זמן בלימוד או להיעזר באנשי מקצוע מוסמכים שיכולים להדריך אתכם.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">8</div>
+                        <h3>התמקדות בטווח הקצר בלבד</h3>
+                        <p>התמקדות רק בתשואות לטווח קצר עלולה לגרום להחלטות פזיזות. חשוב לשמור על פרספקטיבה ארוכת טווח ולא להיבהל מתנודות זמניות בשוק.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">9</div>
+                        <h3>הקשבה לסיפורים של אחרים</h3>
+                        <p>מה שעבד עבור אחרים לא בהכרח יעבוד עבורכם. כל אדם נמצא במצב פיננסי שונה עם יעדים שונים. חשוב לבנות תכנית אישית המותאמת למצבכם הספציפי.</p>
+                    </article>
+
+                    <article class="mistake-card">
+                        <div class="mistake-number">10</div>
+                        <h3>אי שמירה על תכנית חיסכון מסודרת</h3>
+                        <p>חיסכון ללא תכנית ברורה הוא כמו נסיעה ללא מפה. חשוב להגדיר יעדים ברורים, לקבוע תקציב ולעקוב אחר ההתקדמות באופן קבוע.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution-section">
+            <div class="content-wrapper">
+                <h2>איך תימנעו מהטעויות האלו?</h2>
+                <div class="solution-content">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">הימנעות מהטעויות הללו מתחילה בהבנה שחיסכון והשקעה הם מסע ארוך טווח שדורש תכנון, משמעת וידע. הנה מספר עקרונות מנחים:</p>
+                    
+                    <ul class="solution-list">
+                        <li><strong>התחילו מוקדם</strong> - אל תחכו לזמן המושלם. התחילו לחסוך ולהשקיע כבר היום, גם אם בסכומים קטנים.</li>
+                        <li><strong>למדו ותתעדכנו</strong> - השקיעו זמן בהבנת מושגים פיננסיים בסיסיים והתעדכנו בשוק.</li>
+                        <li><strong>פזרו את ההשקעות</strong> - אל תשימו את כל הביצים בסל אחד. פיזור נכון מפחית סיכונים.</li>
+                        <li><strong>בנו תכנית אישית</strong> - התאימו את תכנית החיסכון למצבכם האישי, ליעדים ולרמת הסיכון שלכם.</li>
+                        <li><strong>היעזרו במומחים</strong> - יועץ פיננסי מוסמך יכול לעזור לכם לבנות תכנית מותאמת אישית.</li>
+                        <li><strong>עקבו ועדכנו</strong> - בדקו את התכנית שלכם באופן קבוע ועדכנו אותה בהתאם לשינויים בחיים.</li>
+                        <li><strong>שמרו על איזון</strong> - חיסכון חשוב, אך לא על חשבון איכות החיים הבסיסית.</li>
+                    </ul>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 30px; color: var(--primary-blue); font-weight: 600;">זכרו: הדרך להצלחה פיננסית מתחילה בהימנעות מטעויות נפוצות ובבניית תכנית חיסכון מסודרת ומותאמת אישית.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Section -->
+        <section class="expert-section">
+            <div class="section-container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 50px; color: var(--dark-text); font-weight: 800;">מי אנחנו?</h2>
+                <div class="expert-card">
+                    <img src="/assets/article__content-3.webp" alt="שי לאופולד מומחה השקעות, חיסכון וביטוח" class="expert-image" loading="lazy" data-image-index="2">
+                    <h3>שי לאופולד</h3>
+                    <p>מומחה השקעות, חיסכון וביטוח עם ניסיון של למעלה מעשור בתחום. אנחנו במרכז הישראלי לחיסכון מתמחים בבניית תכניות חיסכון מותאמות אישית ומסייעים ללקוחותינו להימנע מטעויות נפוצות ולהגיע ליעדים הפיננסיים שלהם.</p>
+                    <a href="/מי-אנחנו/" class="cta-button" style="background: var(--primary-blue); color: var(--white); margin-top: 10px;">למידע נוסף עלינו</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>השאירו פרטים לקבלת הצעה לתוכנית חיסכון</h2>
+                <p>קבלו ייעוץ מקצועי ללא עלות ובנו תכנית חיסכון מותאמת אישית שתעזור לכם להימנע מטעויות ולהגיע ליעדים שלכם</p>
+                <a href="/צור-קשר/" class="cta-button">השאירו פרטים עכשיו</a>
+            </div>
+        </section>
+
+        <!-- Related Articles Section -->
+        <section class="related-section">
+            <div class="section-container">
+                <h2>מאמרים נוספים שיעניינו אותך</h2>
+                <div class="related-grid">
+                    <article class="related-card">
+                        <img src="/assets/ar-16x9-4.webp" alt="איש עסקים קופץ משנת 2025 לשנת 2026" loading="lazy" data-image-index="3">
+                        <div class="related-card-content">
+                            <h3>תוכנית חיסכון איפה הכי נכון לחסוך ולהשקיע</h3>
+                            <p>גלו את האפשרויות הטובות ביותר לחיסכון והשקעה בשנת 2026 ובנו תכנית מותאמת אישית.</p>
+                            <a href="/תוכנית-חיסכון-איפה-הכי-נכון-לחסוך-ולהש/" class="read-more">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <article class="related-card">
+                        <img src="/assets/savings-homepage js-dialog-button-2.webp" alt="חסכו בגדול והשקיעו בחוכמה" loading="lazy" data-image-index="1">
+                        <div class="related-card-content">
+                            <h3>קופת גמל להשקעה כך תחסכו נכון</h3>
+                            <p>למדו כיצד לבחור קופת גמל להשקעה נכונה ולמקסם את התשואות שלכם לטווח ארוך.</p>
+                            <a href="/קופת-גמל-להשקעה-כך-תחסכו-נכון/" class="read-more">קרא עוד</a>
+                        </div>
+                    </article>
+
+                    <article class="related-card">
+                        <img src="/assets/ar-16x9-5.webp" alt="צורה של ביטוח מצוייר מונח על כף יד ברקע של שדה ירוק ושמים כחולים" loading="lazy" data-image-index="4">
+                        <div class="related-card-content">
+                            <h3>סדר בביטוחים - מפסיקים תשלומי ביטוח מיותרים</h3>
+                            <p>גלו כיצד לעשות סדר בביטוחים, להימנע מכפל ביטוחים ולחסוך אלפי שקלים בשנה.</p>
+                            <a href="/סדר-בביטוחים-מפסיקים-תשלומי-הביטוח/" class="read-more">קרא עוד</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Companies Section -->
+        <section class="companies-section">
+            <div class="section-container">
+                <h2>חברות מובילות</h2>
+                <div class="companies-grid">
+                    <p style="color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">אנחנו עובדים עם חברות הביטוח וההשקעות המובילות בישראל כדי להבטיח לכם את המוצרים והשירותים הטובים ביותר. שיתופי הפעולה שלנו מאפשרים לנו להציע לכם מגוון רחב של אפשרויות ולמצוא את הפתרון המתאים ביותר למצבכם האישי.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section class="cta-section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%); margin-top: 0;">
+            <div class="cta-content">
+                <h2>הצטרפו אלינו!</h2>
+                <p>הצטרפו לאלפי לקוחות מרוצים שכבר בנו תכנית חיסכון מוצלחת עם המרכז הישראלי לחיסכון</p>
+                <a href="/צור-קשר/" class="cta-button">צור קשר עכשיו</a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Legal Footer -->
+    
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2026 המרכז הישראלי לחיסכון. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://www.facebook.com/savings.co.il" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon social-facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+<a href="https://www.youtube.com/channel/UCiB4vzhyDrzDKm5bv4po-tw" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon social-youtube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+<a href="https://www.instagram.com/savings.co.il" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon social-instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'd671e353-11e0-41f5-9cd2-0168116feffc';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>
